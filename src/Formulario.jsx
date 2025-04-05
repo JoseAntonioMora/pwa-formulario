@@ -52,7 +52,6 @@ export default function Formulario() {
         const response = await fetch("/api/GenerarPDF", {
         method: "POST",
         headers: { "Content-Type": "application/json",
-                
         },
         body: JSON.stringify(formData),
         });
