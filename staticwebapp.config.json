@@ -1,1 +1,13 @@
-{}
+{
+    "routes": [
+      {
+        "route": "/api/GenerarPDF",
+        "allowedRoles": ["anonymous"],
+        "rewrite": "https://demo-pdf-sagitario.azurewebsites.net/api/GenerarPDF",
+        "headers": {
+          "x-api-key": "APP_SETTING_API_KEY"
+        }
+      }
+    ]
+  }
+  
