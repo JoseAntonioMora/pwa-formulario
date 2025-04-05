@@ -48,12 +48,11 @@ export default function Formulario() {
 
     try {
         console.log("Enviando datos:", formData);
-        const functionKey = process.env.AZURE_APP_FUNCTION_KEY;
         // Enviar datos a la API
-        const response = await fetch("https://demo-pdf-sagitario.azurewebsites.net/api/GenerarPDF", {
+        const response = await fetch("/api/GenerarPDF", {
         method: "POST",
         headers: { "Content-Type": "application/json",
-                "x-api-key": functionKey
+                
         },
         body: JSON.stringify(formData),
         });
