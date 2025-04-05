@@ -32,7 +32,7 @@ export default defineConfig({
     })],
   server: {
     proxy: {
-      '/api': 'hhttps://demo-pdf-sagitario.azurewebsites.net/', // Redirige las solicitudes a la API
+      '/api': 'https://demo-pdf-sagitario.azurewebsites.net/', // Redirige las solicitudes a la API
     },
   },
 })
