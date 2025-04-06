@@ -29,6 +29,8 @@ jobs:
         run: npm run build # Runs Vite's build command to generate dist/
       - name: Copy Config
         run: cp staticwebapp.config.json dist/ # Copies the config file to dist/
+      - name: Verificar contenido dist/
+        run: ls -l dist/
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
